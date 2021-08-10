@@ -1,13 +1,30 @@
 package com.example.songr;
 
-public class Album {
+import javax.persistence.*;
 
+import javax.persistence.Entity;
+@Entity
+public class Album {
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    @Id
+        @GeneratedValue(strategy = GenerationType.IDENTITY)
+//@Column(columnDefinition="TEXT")
+    long id;
     String artist;
     String title;
     int songCount;
     double length;
     String imgUrl;
 
+
+public Album(){}
 
     public Album(String artist, String title, int songCount, double length, String imgUrl) {
         this.artist = artist;
