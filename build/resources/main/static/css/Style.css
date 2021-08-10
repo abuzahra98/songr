@@ -1,0 +1,36 @@
+body {
+background: grey;
+}
+
+p {
+margin: auto;
+text-align: center;
+line-height: 60px;
+font-size: 30px;
+}
+h3{
+margin: auto;
+text-align: center;
+line-height: 60px;
+font-size: 50px;
+}
+
+img {
+margin: auto;
+display: flex;
+align-items: center;
+height:300px;
+width;300px;
+
+}
+
+form{
+height:60px;
+width:100px;
+
+
+}
+span{
+    color: moccasin;
+    font-size: x-large;
+}
