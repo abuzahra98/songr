@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+<span>
 <form action="/addAllalbums" method="post">
   <label>Artist:</label>
   <input type="text" name="artist">
@@ -20,11 +22,17 @@
   <input type="text" name="imageUrl">
   <input type="submit" value="Added Albmos">
 </form>
-<div th:each="arr : ${albumList}">
+</span>
+
+<div class="out" th:each="arr : ${albumList}">
   <img th:src="@{${arr.imgUrl}}"alt="album cover">
+  <h3>Artist:</h3>
   <p th:text="${arr.artist}" >Artist </p>
+  <h3>Title:</h3>
   <p th:text="${arr.title}">Title</p>
+  <h3>Length:</h3>
   <p th:text="${arr.length}">Length</p>
+  <h3>Number of Songs:</h3>
   <p th:text="${arr.songCount}">Number of Songs</p>
 
 </div>
