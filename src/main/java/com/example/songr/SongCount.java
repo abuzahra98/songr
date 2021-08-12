@@ -42,8 +42,7 @@ public class SongCount {
         arr.add(
                 new Album("Jeane", "sky", 16, 53.12, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0PSnJr0m7yezNk6G2B-m6ZQLc490ey9yurw&usqp=CAU")
         );
-        System.out.println(arr.get(1).artist);
-        System.out.println("fffffffffff");
+
 
     }
 
