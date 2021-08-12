@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--https://www.baeldung.com/spring-data-crud-repository-save ('/addSongs' + '?_method=save'") in here-->
+<form th:action="'/addSongs' + '?_method=save'" method="POST">
+    <fieldset>
+        <legend>Add A Song</legend>
+        <label for="title">Song Title</label>
+        <input type="text" name="title">
+
+        <label for="length">Song Length (Seconds)</label>
+        <input type="number" name="length">
+
+        <label for="trackNumber">Track Number</label>
+        <input type="number" name="songCount">
+
+        <input type="submit" value="Add a Song">
+    </fieldset>
+</form>
+
+
+</body>
+</html>
